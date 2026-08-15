@@ -32,6 +32,10 @@ p {
     color: #1e88e5;
 }
 
+.technologies b {
+    margin-right: 6px;
+}
+
 nav a {
     text-decoration: none;
     margin: 0 15px;
@@ -309,15 +313,45 @@ footer {
     font-size: 18px;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
 
+    /* Header */
     header {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+        padding: 15px;
     }
-     .hero {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 10px;
+        padding: 5px;
+    }
+
+    nav a {
+        margin: 4px 6px;
+        font-size: 13px;
+    }
+
+
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        height: auto;
         flex-direction: column;
         text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
     }
 
     .hero-text h1 {
@@ -330,6 +364,10 @@ footer {
 
     .hero-text p {
         font-size: 16px;
+        line-height: 1.7;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-buttons {
@@ -339,6 +377,7 @@ footer {
 
     .social-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero-image img {
@@ -346,54 +385,230 @@ footer {
         height: 230px;
     }
 
-    .training-header {
-        flex-direction: column;
+
+    /* General Sections */
+    .section {
+        padding: 60px 20px;
     }
 
-    .training-status {
-        align-self: flex-start;
+    .section h1 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+
+    /* About */
+    .about-card {
+        padding: 25px;
     }
 
     .about-highlights {
         grid-template-columns: 1fr;
     }
 
-    .about-card {
+
+    /* Training */
+    .training-card {
         padding: 25px;
     }
 
+    .training-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .training-status {
+        align-self: flex-start;
+        margin-top: 5px;
+    }
+
+
+    /* Projects */
     .project-card {
         flex-direction: column;
         align-items: stretch;
+        gap: 25px;
     }
 
     .project-image-container {
-        flex: 0 0 480px;
+        flex: none;
         width: 100%;
     }
 
     .project-image {
-        width: 480px;
-        max-width: 500px;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
         margin: 0 auto;
     }
 
     .project-buttons {
         flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    /* Buttons */
+    .btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+
+    /* Contact */
+    .contact p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        font-size: 22px;
     }
 
     nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-        background-color: white;
+        gap: 3px 6px;
     }
 
     nav a {
-        margin: 10px;
+        font-size: 12px;
+        margin: 3px 4px;
+    }
+
+
+    /* Hero */
+    .hero {
+        padding: 40px 15px;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+
+    /* Sections */
+    .section {
+        padding: 45px 15px;
+    }
+
+    .section h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-intro {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .about-item {
+        padding: 20px;
+    }
+
+    .about-item h3 {
+        font-size: 17px;
+    }
+
+    .about-item p {
+        font-size: 15px;
+    }
+
+    .training-card {
+        padding: 20px;
+    }
+
+    .training-status {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .tech-tags {
+        gap: 7px;
+    }
+
+    .tech-tags span {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    .project-card {
+        gap: 20px;
+    }
+
+    .project-content p,
+    .project-content ul li {
+        font-size: 14px;
+    }
+
+    .project-content ul {
+        padding-left: 18px;
+    }
+
+    .project-content ul li {
+        line-height: 1.55;
+        margin-bottom: 10px;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-buttons .btn {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .btn {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 18px 10px;
+        font-size: 14px;
     }
 }
 
