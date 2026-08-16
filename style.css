@@ -22,6 +22,46 @@ header {
     z-index: 1000;
 }
 
+.nav-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #1e88e5;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-container nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container nav a {
+    text-decoration: none;
+    color: #222;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #222;
+    cursor: pointer;
+    padding: 5px;
+}
+
 p {
   text-align: justify;
 }
@@ -36,15 +76,16 @@ p {
     margin-right: 6px;
 }
 
-nav a {
+.nav-container nav a {
     text-decoration: none;
-    margin: 0 15px;
     color: #222;
+    margin: 0 12px;
+    font-size: 14px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-nav a:hover {
+.nav-container nav a:hover {
     color: #1e88e5;
 }
 
@@ -326,21 +367,6 @@ footer {
         font-size: 24px;
     }
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px 10px;
-        padding: 5px;
-    }
-
-    nav a {
-        margin: 4px 6px;
-        font-size: 13px;
-    }
-
-
-    /* Hero Section */
     .hero {
         min-height: auto;
         height: auto;
@@ -426,8 +452,6 @@ footer {
         margin-top: 5px;
     }
 
-
-    /* Projects */
     .project-card {
         flex-direction: column;
         align-items: stretch;
@@ -451,15 +475,11 @@ footer {
         gap: 10px;
     }
 
-
-    /* Buttons */
     .btn {
         padding: 12px 22px;
         font-size: 14px;
     }
 
-
-    /* Contact */
     .contact p {
         font-size: 17px;
     }
@@ -467,43 +487,49 @@ footer {
 
 @media (max-width: 600px) {
 
-    body {
-        overflow-x: hidden;
+    header {
+        padding: 0;
     }
 
-    header {
-        padding: 10px 8px;
+    .nav-container {
+        padding: 12px 20px;
     }
 
     .logo {
-        font-size: 22px;
+        font-size: 20px;
     }
 
-    nav {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        gap: 18px;
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 4px 8px;
-        scrollbar-width: none;
+    .menu-toggle {
+        display: block;
     }
 
-    nav::-webkit-scrollbar {
+    .nav-container nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
-    nav a {
-        font-size: 12px;
+    .nav-container nav.active {
+        display: flex;
+    }
+
+    .nav-container nav a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
         margin: 0;
-        flex-shrink: 0;
-        white-space: nowrap;
+        font-size: 15px;
     }
 
-
-    /* Hero */
+    .nav-container nav a:hover {
+        background: #f2f7ff;
+    }
 
     .hero {
         min-height: auto;
@@ -549,7 +575,7 @@ footer {
         flex-wrap: wrap;
         gap: 10px;
     }
-    
+
     .hero-links {
         justify-content: center;
     }
