@@ -472,7 +472,7 @@ footer {
     }
 
     header {
-        padding: 10px 6px;
+        padding: 10px 8px;
     }
 
     .logo {
@@ -480,23 +480,35 @@ footer {
     }
 
     nav {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 8px 4px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 18px;
         width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 4px 8px;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav a {
-        font-size: 11px;
+        font-size: 12px;
         margin: 0;
-        text-align: center;
+        flex-shrink: 0;
         white-space: nowrap;
     }
+
+
+    /* Hero */
 
     .hero {
         min-height: auto;
         height: auto;
-        padding: 70px 20px 50px;
+        padding: 45px 20px 40px;
         gap: 30px;
         flex-direction: column;
         text-align: center;
@@ -535,12 +547,12 @@ footer {
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .hero-links {
         justify-content: center;
     }
-
 
     /* Sections */
     .section {
