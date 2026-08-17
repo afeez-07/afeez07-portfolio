@@ -315,7 +315,6 @@ footer {
 
 @media (max-width: 900px) {
 
-    /* Header */
     header {
         flex-direction: column;
         gap: 10px;
@@ -339,8 +338,6 @@ footer {
         font-size: 13px;
     }
 
-
-    /* Hero Section */
     .hero {
         min-height: auto;
         height: auto;
@@ -385,8 +382,6 @@ footer {
         height: 230px;
     }
 
-
-    /* General Sections */
     .section {
         padding: 60px 20px;
     }
@@ -400,8 +395,6 @@ footer {
         padding: 25px;
     }
 
-
-    /* About */
     .about-card {
         padding: 25px;
     }
@@ -410,8 +403,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
-    /* Training */
     .training-card {
         padding: 25px;
     }
@@ -426,8 +417,6 @@ footer {
         margin-top: 5px;
     }
 
-
-    /* Projects */
     .project-card {
         flex-direction: column;
         align-items: stretch;
@@ -451,15 +440,11 @@ footer {
         gap: 10px;
     }
 
-
-    /* Buttons */
     .btn {
         padding: 12px 22px;
         font-size: 14px;
     }
 
-
-    /* Contact */
     .contact p {
         font-size: 17px;
     }
@@ -472,7 +457,7 @@ footer {
     }
 
     header {
-        padding: 10px 6px;
+         padding: 10px 6px;
     }
 
     .logo {
@@ -541,8 +526,6 @@ footer {
         justify-content: center;
     }
 
-
-    /* Sections */
     .section {
         padding: 40px 15px;
     }
