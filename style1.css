@@ -999,3 +999,58 @@ footer {
         font-size: 15px;
     }
 }
+
+.contact-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-btn i {
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #e9ecef;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+/* Optional brand-specific accent hover colors */
+.github-btn:hover { 
+    color: #24292e; 
+}
+.linkedin-btn:hover { 
+    color: #0a66c2; 
+}
+.email-btn:hover { 
+    color: #ea4335; 
+}
+.phone-btn:hover { 
+    color: #34a853; 
+}
+.aws-btn:hover { 
+    color: #ff9900; 
+}
+.aws-icon { 
+    width: 20px; height: 20px; 
+}
