@@ -1080,3 +1080,151 @@ footer {
 .aws-icon { 
     width: 20px; height: 20px; 
 }
+
+.experience-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 25px 100px;
+}
+
+.experience-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.experience-heading h1 {
+    color: #2587e8;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.experience-heading p {
+    color: #555;
+    font-size: 17px;
+}
+
+.experience-card {
+    background: #ffffff;
+    border-left: 5px solid #2587e8;
+    border-radius: 12px;
+    padding: 32px 38px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.experience-header {
+    margin-bottom: 25px;
+}
+
+.experience-header h2 {
+    font-size: 27px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.experience-header h3 {
+    font-size: 18px;
+    color: #2587e8;
+    margin-bottom: 7px;
+}
+
+.experience-date {
+    color: #666;
+    font-size: 15px;
+}
+
+.experience-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-points li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.experience-points li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    top: 0;
+    color: #2587e8;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.experience-skills span {
+    background: #eaf4ff;
+    color: #1675d1;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 850px) {
+
+    .experience-section {
+        padding: 55px 20px 80px;
+    }
+
+    .experience-heading h1 {
+        font-size: 32px;
+    }
+
+    .experience-card {
+        padding: 28px 25px;
+    }
+
+    .experience-header h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .experience-heading {
+        margin-bottom: 30px;
+    }
+
+    .experience-heading h1 {
+        font-size: 29px;
+    }
+
+    .experience-heading p {
+        font-size: 15px;
+    }
+
+    .experience-card {
+        padding: 23px 19px;
+        border-left-width: 4px;
+    }
+
+    .experience-header h2 {
+        font-size: 21px;
+    }
+
+    .experience-header h3 {
+        font-size: 16px;
+    }
+
+    .experience-points li {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 13px;
+    }
+
+}
